@@ -1,0 +1,112 @@
+.contenedor .header {
+  background: #5C6E8A;
+  color: #fff;
+  grid-area: header;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor .footer {
+  background: #5C6E8A;
+  color: white;
+  grid-area: footer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.copy {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  grid-column: 3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF7DC;
+  color: black;
+  font-family: "poppins", sans-serif;
+}
+
+.titulo {
+  font-family: "poppins", sans-serif;
+  grid-column: 2/3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "contenido contenido sidebar" "widget-1 widget-2 sidebar" "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .contenido,
+.contenedor .sidebar {
+  background-color: #CFF7ED;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor .contenido {
+  grid-area: contenido;
+}
+
+.contenedor .sidebar {
+  font-size: 20px;
+  grid-column: 3/4;
+  background: #55a8fd;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar;
+  color: white;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+  background: #55a8fd;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .widget-1 {
+  grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+  grid-area: widget-2;
+}
+
+.fotos {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 widget-1 widget-2" "footer footer footer";
+  }
+}/*# sourceMappingURL=styles.css.map */

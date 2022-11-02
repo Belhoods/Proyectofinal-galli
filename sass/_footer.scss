@@ -1,0 +1,19 @@
+.contenedor .footer {
+    background: $color-complementario;
+    color: white;
+    grid-area: footer;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.copy {
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    grid-column:  3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15px;
+}

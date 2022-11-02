@@ -1,0 +1,19 @@
+@import './variables';
+@import './header';
+@import './footer';
+@import './reset';
+@import './general';
+@import './mixin';
+
+.fotos {
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas:"header header header"
+                            "contenido contenido contenido"
+                            "widget-1 widget-1 widget-2"
+                            "footer footer footer";
+    }
+}
